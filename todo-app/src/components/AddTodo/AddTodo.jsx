@@ -10,7 +10,7 @@ function AddTodo() {
 
   const handleTodoAddition=()=>{
     dispatch(addTodo(newTodo))
-    setNewTodo(" ")
+    setNewTodo('')
   }
 
   return (
