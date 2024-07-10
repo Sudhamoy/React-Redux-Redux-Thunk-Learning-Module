@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#closeBtn{
+  cursor: pointer;
+}
