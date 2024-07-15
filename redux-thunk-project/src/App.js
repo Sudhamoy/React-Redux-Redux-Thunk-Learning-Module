@@ -1,12 +1,14 @@
 import './App.css';
 import News from './components/News/News';
+import Navbar from './components/Navbar';
 import {Provider} from 'react-redux';
 import store from './store/store';
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
+      <div className="App font-mono bg-slate-50">
+        <Navbar/>
         <News/>
       </div>
     </Provider>

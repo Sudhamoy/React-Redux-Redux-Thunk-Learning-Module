@@ -1,7 +1,6 @@
 /* import { useState, useEffect } from 'react' */
 /* import axios from 'axios' */
 import React from 'react'
-import './News.css'
 import SingleNews from '../SingleNews/SingleNews'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
@@ -23,15 +22,12 @@ function News() {
   },[dispatch])
 
   return (
-    <div className='News'>
-      <h1 className='page-heading'>BREAKING NEWS</h1>
 
-      <div className='news-container'>
+      <div className='flex flex-wrap mx-auto justify-evenly container py-4'>
       {!loading ? news.map((singleNews,index)=>(
         <SingleNews key={index} singleNews={singleNews}/>
       )) : <img src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG9wNTdvdGk0enE2Y3N5b3hubW5qNzg4NjlzeGdkNG1ob2Eyemx3MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uIJBFZoOaifHf52MER/giphy.webp' alt='loading'/>}
       </div>
-    </div>
   )
 }
 
@@ -119,3 +115,12 @@ const MyComponent = () => {
 
 export default MyComponent;
  */
+
+
+
+
+/* TAILWIND CSS:
+(1) font-size: text-2xl, text-3xl, text-4xl, text-[200px] 
+(2) color: text-white, text-red, text-[#2272FF]
+(3) font-weight: font-bold, font-semibold, font-[600]
+*/
